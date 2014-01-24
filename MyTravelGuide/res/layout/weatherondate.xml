@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp" >
+           
+        <Button
+            android:id="@+id/back_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:text="@string/back" />
+
+        <ImageView
+            android:id="@+id/fahrenheit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/back_Button"
+            android:layout_alignTop="@+id/back_Button"
+            android:layout_toRightOf="@+id/back_Button"
+            android:background="@android:color/transparent"
+            android:contentDescription="@+id/fahrenheit_button"
+            android:src="@drawable/fahrenheit_button"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/celsius_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fahrenheit_button"
+            android:layout_alignTop="@+id/fahrenheit_button"
+            android:layout_toRightOf="@+id/weather_highest_temperature_title"
+            android:background="@android:color/transparent"
+            android:contentDescription="@+id/celsius_button"
+            android:src="@drawable/celsius_button"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/weatherdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weather_condition_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/weatherdate"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/weatherimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather_condition_title"
+            android:layout_below="@+id/weather_condition_title"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@+id/weather_image" />
+
+        <TextView
+            android:id="@+id/weather_condition_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/weatherimage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/weatherimage"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weather_lowest_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weatherimage"
+            android:layout_below="@+id/weather_condition_description"
+            android:layout_marginTop="20dp"
+            android:text="@string/low"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weather_lowest_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weather_condition_description"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/weather_lowest_temperature_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weather_highest_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather_lowest_temperature_title"
+            android:layout_below="@+id/weather_lowest_temperature_title"
+            android:layout_marginTop="20dp"
+            android:text="@string/high"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weather_highest_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather_lowest_temperature"
+            android:layout_below="@+id/weather_lowest_temperature_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/weather_highest_temperature_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cloth_suggestion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather_highest_temperature_title"
+            android:layout_below="@+id/weather_highest_temperature_title"
+            android:layout_marginTop="20dp"
+            android:text="@string/suggestiontitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/on_top_suggestion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cloth_suggestion_title"
+            android:layout_below="@+id/cloth_suggestion_title"
+            android:layout_marginTop="20dp"
+            android:text="@string/ontop"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/on_top_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cloth_suggestion_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/on_top_suggestion_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/on_bottom_suggestion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/on_top_suggestion_title"
+            android:layout_below="@+id/on_top_suggestion_title"
+            android:layout_marginTop="30dp"
+            android:text="@string/onbottom"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/on_bottom_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/on_top_suggestion_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/on_bottom_suggestion_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/accessories_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/on_bottom_suggestion_title"
+            android:layout_below="@+id/on_bottom_suggestion_title"
+            android:layout_marginTop="20dp"
+            android:text="@string/accessoriestitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/accessories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/on_bottom_suggestion_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/accessories_title"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</ScrollView>

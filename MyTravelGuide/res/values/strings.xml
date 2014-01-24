@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Forecast Weather</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Weather at Destination</string>
+    <string name="suggestiontitle">Clothing Suggestion</string>
+    <string name="back">Back</string>
+    <string name="low">Low :</string>
+    <string name="high">High :</string>
+    <string name="ontop">On Top :</string>
+    <string name="onbottom">On Bottom :</string>
+    <string name="accessoriestitle">Accessories :</string>
+</resources>
